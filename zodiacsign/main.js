@@ -1,6 +1,4 @@
 function init(){
-
-    //estrelas
   
     var style = ["style1", "style2", "style3", "style4"];
     var tam = ["tam1", "tam1", "tam1", "tam2", "tam3"];
@@ -10,19 +8,19 @@ function init(){
       return Math.floor(Math.random() * (max - min)) + min;
     }
   
-    var estrela = "";
-    var qtdeEstrelas = 250;
+    var star = "";
+    var starAmount = 300;
     var noite = document.querySelector(".constelacao");
-    var widthWindow = window.innerWidth;
-    var heightWindow = window.innerHeight;
+    var widthWindow = 2600;
+    var heightWindow = 2600;
   
-    for (var i = 0; i < qtdeEstrelas; i++) {
-      estrela += "<span class='estrela " + style[getRandomArbitrary(0, 4)] + " " + opacity[getRandomArbitrary(0, 6)] + " "
+    for (var i = 0; i < starAmount; i++) {
+      star += "<span class='star " + style[getRandomArbitrary(0, 4)] + " " + opacity[getRandomArbitrary(0, 6)] + " "
       + tam[getRandomArbitrary(0, 5)] + "' style='animation-delay: ." +getRandomArbitrary(0, 9)+ "s; left: "
       + getRandomArbitrary(0, widthWindow) + "px; top: " + getRandomArbitrary(0, heightWindow) + "px;'></span>";
     }
   
-    noite.innerHTML = estrela;
+    noite.innerHTML = star;
   
     //meteoros
   

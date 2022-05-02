@@ -1,25 +1,22 @@
-* {
-    margin: 0;
-}
-.background {
-    height: 1500px;
-    max-width:100%;
-    background: radial-gradient(ellipse farthest-corner at 10% -40%, #dcceff, #534081, #030107);
-    /* background-repeat: no-repeat; */
-}
-
 .title {
     font-size: 70px;
     font-family: 'Gill Sans';
     font-weight: lighter;
     color: white;
+    margin: 50px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 99;
+
+    text-shadow: 7px 7px 7px rgba(255, 255, 255, 0.377);
 }
 
 .aries, .taurus, .gemini, .cancer, .leo, .virgo, 
 .libra, .scorpius, .sagittarius, .carpricorn, .aquarius, .pisces{
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
-    margin: auto;
+    box-shadow: 0 0 50px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    margin: 50px auto 0;
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -29,6 +26,7 @@
     font-weight: 700;
     line-height: 5;
     overflow: hidden;
+    z-index: 100;
 }
 
 /* 양자리 */
@@ -36,4 +34,17 @@
     width: 90%;
     height: 90%;
     object-fit: cover;
+}
+
+
+/* Modal */
+
+.modal {
+    margin-top: 170px;
+    background-color: black !important;
+    color: white;
+}
+
+.modal_image {
+    width: 500px;
 }
