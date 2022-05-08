@@ -14,8 +14,11 @@
 <!--
 
 ERROR : XMLHttpRequest cannot load file:///Users/mac_yhj/VSC/Zodiac_Sign/zodiacsign/zodiacList/aries.html due to access control checks.
-1. 넷플릭스 구조
-2. 깜빡임 발생 가능하나 index 구조를 띄는 가운데 변화를 준 zodiacList 로 수정
+
+Live server로 해결
+http://127.0.0.1:5500/zodiacsign/index.html로 실행
+
+   깜빡임 발생 가능하나 index 구조를 띄는 가운데 변화를 준 zodiacList 로 수정 (추가로 12개 생성)
     or
    모든 내용물 index 에 작성
 
@@ -47,7 +50,7 @@ ERROR : XMLHttpRequest cannot load file:///Users/mac_yhj/VSC/Zodiac_Sign/zodiacs
             </div>
 
             <!-- 게자리 -->
-            <div class="cancer">
+            <div class="cancer" onClick="location.href='./zodiacList/cancer.html'">
                 <img src="./image/CancerIcon.png" alt="" class="circle_inside">
             </div>
 
@@ -97,10 +100,8 @@ ERROR : XMLHttpRequest cannot load file:///Users/mac_yhj/VSC/Zodiac_Sign/zodiacs
     <div class="constelacao"></div>
     <div class="chuvaMeteoro"></div>
     <div class="floresta">
-        <div>
             <img class="forestimg"
                 src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
-        </div>
     </div>
 </body>
 
