@@ -2,19 +2,130 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Sign Web - Cancer</title>
+    <link rel="stylesheet" href="list.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+    </style>
 </head>
 
-<body style="background-color: black">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<body>
+    <div class="list_div">
+        <div class="left-icon">
+            <div class="list_mobilelefticon">
+                <!-- 왼. 양자리 -->
+                <div class="list_icon" onclick="onClickList('aries')">
+                    <img src="../image/AriesIcon.png" class="list_circle_inside">
+                </div>
 
-     <div style="color: white">
-        <h1>여기는 cancer.html 입니다!</h1>
-        <img src="../image/CancerInModal.png" class="modal_image" style="width: 600px">
-        <p>새로운 배경 or 기존 별 배경 / 뒤로가기 버튼, 다른 별자리 둘러보기</p>
+                <!-- 왼. 황소자리 -->
+                <div class="list_icon" onclick="onClickList('taurus')">
+                    <img src="../image/TaurusIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 왼. 쌍둥이자리 -->
+                <div class="list_icon" onclick="onClickList('gemini')">
+                    <img src="../image/GeminiIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 왼. 게자리 -->
+                <div class="list_icon" onclick="onClickList('cancer')" style="opacity: 1">
+                    <img src="../image/CancerIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 왼. 사자자리 -->
+                <div class="list_icon" onclick="onClickList('leo')">
+                    <img src="../image/LeoIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 왼. 처녀자리 -->
+                <div class="list_icon" onclick="onClickList('virgo')">
+                    <img src="../image/VirgoIcon.png" alt="" class="list_circle_inside">
+                </div>
+            </div>
+            <div class="list_mobilerighticon">
+                <!-- 반응형.오. 천칭자리 -->
+                <div class="list_icon" onclick="onClickList('libra')">
+                    <img src="../image/LibraIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 반응형.오. 전갈자리 -->
+                <div class="list_icon" onclick="onClickList('scorpius')">
+                    <img src="../image/ScorpiusIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 반응형.오. 사수자리 -->
+                <div class="list_icon" onclick="onClickList('sagittarius')">
+                    <img src="../image/SagittariusIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 반응형.오. 염소자리 -->
+                <div class="list_icon" onclick="onClickList('capricorn')">
+                    <img src="../image/CapricornIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 반응형.오. 물병자리 -->
+                <div class="list_icon" onclick="onClickList('aquarius')">
+                    <img src="../image/AquariusIcon.png" alt="" class="list_circle_inside">
+                </div>
+
+                <!-- 반응형.오. 물고기자리 -->
+                <div class="list_icon" onclick="onClickList('pisces')">
+                    <img src="../image/PiscesIcon.png" alt="" class="list_circle_inside">
+                </div>
+            </div>
+        </div>
+        <div class="list_content">
+            <p class="list_text_title">Cancer (게자리)</p>
+            <p class="list_text_one">황도 12궁의 제 4궁</p>
+            <img src="../image/CancerInModal.png" class="list_image">
+            <p class="list_text_two">6월 22일 ~ 7월 22일</p>
+            <p class="list_text_three">황도 12궁의 <b class="bold">네 번째</b> 별자리이이며, 수호성은 달이다. 한자어로는 蟹(게 해)를 써서 <b class="bold">거해궁(巨蟹宮)</b>이라고 한다.
+                <br /><br />가장 밝은 별이 4등성일 정도로 매우 어두우며, 황도 12궁의 별자리 중 물고기자리 다음으로 <b class="bold">어둡다.</b> 태양이 지나가는 황도에 위치한 별자리인데도 너무 어두운 관계로, 동서양을 막론하고 대우가 심히 좋지 않다.
+                불길한 별자리로 취급당한다거나, 찌질한 신화가 붙는다던가...
+                <br /><br />그리스 신화에 의하면 헤라가 히드라를 도와 <b class="bold">헤라클레스</b>를 없애기 위해 보낸 거대한 게로, 헤라클레스의 발꿈치를 집게로 꼬집었지만 분노한 헤라클레스에게 짓밟혀 죽으면서 한 다리를 잃었다.
+                <br />(이 때문에 게자리도 한 다리가 없는 게같은 모양을 하고 있다)
+                <br /><br />특징으로는 붉은 빛을 띄는 <b class="bold">M44 프레세페</b>라는 산개성단이 보이는 것인데, 동양에서는 게자리를 불길한 별자리로 여겨 게자리는 무덤이라는 뜻의 귀수(鬼宿) 혹은 상여라는 뜻의 여귀(輿鬼)라 불렀으며 
+                M44 프레세페 성단은 쌓인 시체들이 뿜어내는 기운이라는 뜻의 적시성(積屍聖) 혹은 적시기(積屍氣)라 불렀다. 영명이 <b class="bold">Cancer</b>라는 걸 생각하면 묘하게 적절하다.
+            </p>
+            <button class="list_homebutton" onclick="location.href='../index.html'">Home</button>
+        </div>
+        <div class="right_icon">
+            <!-- 오. 천칭자리 -->
+            <div class="list_icon" onclick="onClickList('libra')">
+                <img src="../image/LibraIcon.png" alt="" class="list_circle_inside">
+            </div>
+
+            <!-- 오. 전갈자리 -->
+            <div class="list_icon" onclick="onClickList('scorpius')">
+                <img src="../image/ScorpiusIcon.png" alt="" class="list_circle_inside">
+            </div>
+
+            <!-- 오. 사수자리 -->
+            <div class="list_icon" onclick="onClickList('sagittarius')">
+                <img src="../image/SagittariusIcon.png" alt="" class="list_circle_inside">
+            </div>
+
+            <!-- 오. 염소자리 -->
+            <div class="list_icon" onclick="onClickList('capricorn')">
+                <img src="../image/CapricornIcon.png" alt="" class="list_circle_inside">
+            </div>
+
+            <!-- 오. 물병자리 -->
+            <div class="list_icon" onclick="onClickList('aquarius')">
+                <img src="../image/AquariusIcon.png" alt="" class="list_circle_inside">
+            </div>
+
+            <!-- 오. 물고기자리 -->
+            <div class="list_icon" onclick="onClickList('pisces')">
+                <img src="../image/PiscesIcon.png" alt="" class="list_circle_inside">
+            </div>
+        </div>
     </div>
+    <script src="../main.js"></script>
 </body>
 
 </html>

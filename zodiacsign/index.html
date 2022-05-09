@@ -11,87 +11,68 @@
     <!-- <meta property="og:image" content=""> -->
 </head>
 
-<!--
-
-ERROR : XMLHttpRequest cannot load file:///Users/mac_yhj/VSC/Zodiac_Sign/zodiacsign/zodiacList/aries.html due to access control checks.
-
-Live server로 해결
-http://127.0.0.1:5500/zodiacsign/index.html로 실행
-
-   깜빡임 발생 가능하나 index 구조를 띄는 가운데 변화를 준 zodiacList 로 수정 (추가로 12개 생성)
-    or
-   모든 내용물 index 에 작성
-
-   어차피 jquery-modal 디자인 힘들거같긴 함
-
--->
-
 <body>
-    <!-- 제이쿼리, 제이쿼리 모달 연결 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script src="main.js"></script>
     <div class="noite">
         <div style="display:flex">
             <!-- 양자리 -->
-            <a class="aries" href="./zodiacList/aries.html" rel="modal:open">
+            <div class="icon" onclick="onClick('aries')">
                 <img src="./image/AriesIcon.png" class="circle_inside">
-            </a>
+            </div>
 
             <!-- 황소자리 -->
-            <div class="taurus">
+            <div class="icon" onclick="onClick('taurus')">
                 <img src="./image/TaurusIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 쌍둥이자리 -->
-            <div class="gemini">
+            <div class="icon" onclick="onClick('gemini')">
                 <img src="./image/GeminiIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 게자리 -->
-            <div class="cancer" onClick="location.href='./zodiacList/cancer.html'">
+            <div class="icon" onclick="onClick('cancer')">
                 <img src="./image/CancerIcon.png" alt="" class="circle_inside">
             </div>
-
+        </div>
+        <div style="display:flex">
             <!-- 사자자리 -->
-            <div class="leo">
+            <div class="icon" onclick="onClick('leo')">
                 <img src="./image/LeoIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 처녀자리 -->
-            <div class="virgo">
+            <div class="icon" onclick="onClick('virgo')">
                 <img src="./image/VirgoIcon.png" alt="" class="circle_inside">
             </div>
-        </div>
-        <div style="display:flex">
+
             <!-- 천칭자리 -->
-            <div class="libra">
+            <div class="icon" onclick="onClick('libra')">
                 <img src="./image/LibraIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 전갈자리 -->
-            <div class="scorpius">
+            <div class="icon" onclick="onClick('scorpius')">
                 <img src="./image/ScorpiusIcon.png" alt="" class="circle_inside">
             </div>
-
+        </div>
+        <div style="display:flex">
             <!-- 사수자리 -->
-            <div class="sagittarius">
+            <div class="icon" onclick="onClick('sagittarius')">
                 <img src="./image/SagittariusIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 염소자리 -->
-            <div class="carpricorn">
+            <div class="icon" onclick="onClick('capricorn')">
                 <img src="./image/CapricornIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 물병자리 -->
-            <div class="aquarius">
+            <div class="icon" onclick="onClick('aquarius')">
                 <img src="./image/AquariusIcon.png" alt="" class="circle_inside">
             </div>
 
             <!-- 물고기자리 -->
-            <div class="pisces">
+            <div class="icon" onclick="onClick('pisces')">
                 <img src="./image/PiscesIcon.png" alt="" class="circle_inside">
             </div>
         </div>
@@ -100,9 +81,10 @@ http://127.0.0.1:5500/zodiacsign/index.html로 실행
     <div class="constelacao"></div>
     <div class="chuvaMeteoro"></div>
     <div class="floresta">
-            <img class="forestimg"
-                src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
+        <img class="forestimg"
+            src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
