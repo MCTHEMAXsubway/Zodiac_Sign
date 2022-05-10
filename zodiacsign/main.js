@@ -45,10 +45,5 @@ function init(){
   function onClick(n) {
     location.href=`./zodiacList/${n}.html`;
   }
-
-  function onClickList(n) {
-    location.href=`./${n}.html`;
-  }
-  
   
   window.onload = init;

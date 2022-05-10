@@ -1,4 +1,3 @@
-
 .title {
     font-size: 70px;
     font-family: 'Gill Sans';
@@ -12,7 +11,9 @@
 
     text-shadow: 7px 7px 7px rgba(255, 255, 255, 0.377);
 }
-
+.icon_list{
+    display: flex;
+}
 .icon {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 20px 0px #fff, 0 0 10px -4px #fff, 0 0 4px 2px rgba(255, 255, 255, 0.26);
@@ -30,9 +31,34 @@
     box-shadow: 0 0 50px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
     transition: all 0.5s;
 }
-
 .circle_inside {
     width: 90%;
     height: 90%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1368px) {
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .br {
+        display: none;
+    }
+    .title {
+        margin: 80px 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .title {
+        font-size: 40px;
+        margin: 30px 15px 30px;
+    }
 }
